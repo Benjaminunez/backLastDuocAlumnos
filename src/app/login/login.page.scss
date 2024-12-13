@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap');
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.ionimput{
+    --background: white;
+    --width:  200px;
+    --height: 30px;
+}
+
+.mensajesRegi{
+    margin: 0px;
+    font-size: 10px;
+    text-align: center;
+    color: black;
+}
+
+#contenedorLogin{
+    background-image: url(https://www.portaldemelipilla.cl/wp-content/uploads/2023/03/DJI_0214-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageneslogin{
+    max-height: 5rem;
+    cursor: pointer;
+}
+
+#baseLogin{
+    background-color: var(--negroDuoc);
+    height: 80vh;
+    max-width: 80vh;
+    width: 80%;
+    max-width: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--fondo);
+    .imageneslogin{
+        max-height: 5rem;
+    }
+        h1{
+            color: #c3bebe;
+            margin: 0px;
+        }
+            #titulo{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 15px;
+            }
+                #Duoc{
+                    color: var(--Duoc);
+                }
+
+    #imputs{
+        padding: 1rem;
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        p{
+            font-size: 10px;
+            margin: 0px;
+        }
+    }
+
+        p{
+            color: #fcb32e;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        p:hover{
+            color: #ffffff;
+        }
+
+        #ingreso{
+            background-color: var(--plomoDuoc);
+            width: 9rem;
+            height: 2rem;
+            color: var(--fondo);
+            border-radius: 5px;
+        }
+
+
+
+}
+
+//ajueste de modal Ionic Recuperar Password//
+
+#contenidoModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8vh;
+    gap: 8px;
+    padding: 20px;
+    p{
+        text-align: center;
+    }
+    ion-title{
+        color: var(--yellowDuoc);
+        padding: 3px;
+    }
+    button{
+        background-color: #ababab;
+        width: 9rem;
+        height: 2rem;
+        color: var(--fondo);
+        border-radius: 5px;
+        margin: 16px;
+    }        
+    
+    button:hover{
+            background-color: #fcb32e;
+    }
+}
+
+#opp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 10px;
+    p{
+        margin: 0px;
+    }
+}
+
+#botonclean{
+    max-width: 4rem;
+    #imgclean{
+        max-height: 43px;
+    }
+
+}

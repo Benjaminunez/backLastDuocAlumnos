@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <div id="barra_superior">
+        <ion-button class="boton_ion" routerLink="/home">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+        <ion-title class="permanent-marker-regular" routerLink="/home" id="logobarra1">
+        <img src="../assets/icon/logoUc.png" alt="Logo">
+        DuocAlumnos 
+      </ion-title>
+      <ion-button class="boton_ion" routerLink="/login">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </div> 
+  </ion-header>
+  
+  <div id="infoUserBase">
+    <div id="contenidoUser">
+      <img src="../assets/icon/list.png" alt="">
+      <ion-title class="permanent-marker-regular">Usuarios LocalStorage</ion-title>
+      <div id="infoUser">
+        <ion-list>
+          <ion-item *ngFor="let usuario of user">
+            <ion-label>
+              <div id="imagenesuser">
+                <img src="../assets/icon/usuarioVista.png" alt="" id="imagennnn">               
+                <h2 class="titulousuarios">{{ usuario.nombre }}</h2>
+              </div>  
+                <p>correo: {{ usuario.email }}</p>              
+                <p>seccion: {{ usuario.seccion }}</p>              
+                <p>sede: {{ usuario.sede }}</p>              
+                <p>edad: {{ usuario.edad }}</p>              
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

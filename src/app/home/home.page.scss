@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// clases de pagina Home//
+
+.foto_class{
+    display: flex;
+    justify-content: flex-start;
+    img{
+        max-width: 45px;
+    }
+}
+
+
+.boton_ion{
+    --background: var(--yellowDuoc) ;    /*css de contendo principal de la pagina*/
+    --border-color: var(--negroDuoc);
+    --width: 50px;
+    --height:50px; 
+    --border-radius: 10%;
+    --color:#ffffff;
+    ion-icon{
+        width: 26px;
+        height:26px; 
+    }
+}
+
+.labels{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.temaUserSesion{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.contenido{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    height: 13rem;        
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.informa-saluda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inform-asis{
+    background-color: var(--plomoSumario);
+    width: 90%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px var(--bordeAsis);
+    padding: 2rem;
+    .part1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            color: var(--letrasTi);
+        }
+    }
+
+}
+
+.docente{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 9vh;
+    align-items: center;
+}
+
+.seccion{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10vh;
+}
+
+// fuentes clases //
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.permanent-little {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.lineahori{
+    background-color: var(--letrasTitulos);
+    height: 15px;
+    width: 3px;
+}
+
+// pestaña barra superior de pagina 
+
+ion-header{               /*css dedicado esqueleto de header*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: var(--plomoDuoc);
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+
+#barra_superior{        /*css donde esta titulo duoc y boton de logout*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6rem ;
+    height: 5rem;
+    background-color: var(--plomoDuoc);
+    ion-title{              /*css titulo duoc*/
+        color: var(--negroDuoc);
+        img{
+            height: auto;
+            width: 25px;
+            ion-menu-button{
+                color: #ffffff;
+            }
+        }
+    }
+    
+}
+
+#info-user{
+    background-color: var(--plomoDuoc);
+    height: 30%;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid black;
+
+
+}
+
+// parte central de pagina movil 
+
+#contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--fondoGeneral);
+}    
+#fecha{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    margin-top: 20px;
+    h1{
+        font-size: 20px;
+        color: #ffffff;
+        background-color: var(--fondoHora);
+        padding: 8px;
+        border-radius: 5px;
+    }
+    h2{
+        color: #0c0909;
+    }
+}  
+
+#sumario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5vh;
+    h2{
+        margin: 15px 0px;
+        color: #0c0909;
+    }
+
+}
+
+#sistencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 2rem;
+    
+    background-color: var(--fondoGeneral);
+}
+
+#nombreUserActive1 {
+    display: flex;
+    
+    justify-content: center;
+}
+#nombreUserActive2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// clase menu lateral de duoc
+
+.menu-header-bg{
+    height: 180px;
+    width: 350px;
+    background-color: var(--plomoDuoc);
+    background: linear-gradient(90deg, 
+        var(--yellowDuoc) 0%,
+        var(-fondoMenuLateralDark) 100%);
+    box-shadow: 0px 1px 10px var(--yellowDuoc);
+    transform: rotate(-15deg);
+    border-radius: 10px 10px 10px 50px ;
+    margin-left: -15px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+
+.header-content{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2.5px solid var(--yellowDuoc);
+         
+
+    }
+    h2{
+        font-weight: 300;
+    }
+
+    p{
+        font-size: 12px;
+        color: var( --fondoContenedor);
+        font-weight: 100;
+    }
+}
+
+.action-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    ion-button{
+        text-transform: capitalize;
+        font-weight: 300;
+        --background: var(--plomoDuoc);
+        --border-radius: 7px;
+        --box-shadow: none;
+        ion-icon{
+            margin-right: 1px ;
+        }
+    }
+}
+
+.menu-item{
+    margin: 0px;
+    ion-icon{
+        margin-right: 20px;
+        color: var(--yellowDuoc);
+        ion-item{
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+    }
+
+    ion-item{
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+ion-item{
+    cursor: pointer;
+}
+

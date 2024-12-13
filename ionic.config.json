@@ -1,0 +1,7 @@
+{
+  "name": "qrFinal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

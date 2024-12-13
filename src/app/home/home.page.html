@@ -1,0 +1,113 @@
+<ion-content [fullscreen]="true">
+
+  <ion-header>
+    <div id="barra_superior">
+        <ion-menu-button class="boton_ion"></ion-menu-button>
+      <ion-title class="permanent-marker-regular" routerLink="/home" id="logobarra"> 
+        <img src="../assets/icon/logoUc.png" alt="Logo">
+        DuocAlumnos 
+      </ion-title>
+      <ion-button class="boton_ion" routerLink="/login">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </div> 
+  </ion-header>
+  
+  <!-- presentación usuario-->
+  
+  <div id="info-user">
+    <div id="presentacion" class="informa-saluda">
+      <h2>Bienvenido: </h2>
+    </div>
+    <div id="nombreUserActive1"  >
+      <h1 class="temaUserSesion">user</h1>
+    </div>
+    
+    <div id="carrera" class="informa-saluda">
+      <h2>Listo para otro Semestre?</h2>
+    </div>
+    <div id="presentacion" class="informa-saluda">
+      <h2>OK</h2>
+    </div>
+  </div> 
+  
+  <!-- parte principal pagina-->
+  
+  <div id="contenido">
+    <div id="fecha">
+      <h2 class="permanent-marker-regular ">fecha actual</h2>
+      <h1>{{ fechaActual }}</h1>
+    </div> 
+      <div id="sumario">
+        <h2 class="permanent-marker-regular">Sumario asistencia</h2>
+      </div>
+  </div>
+  
+    
+  <div id="sistencias">
+    <div class="inform-asis"  *ngFor="let r of resultadoScann">
+      <div class="foto_class">
+        <img src="{{r.foto}}" alt="">
+      </div>
+      <div class="part1">
+        <div class="lineahori"></div>
+        <p class="permanent-little">{{r.curso}}</p>
+      </div>
+      <div class="part1">
+        <div class="docente">
+          <p class="permanent-little ">Docente: </p>  
+          <p>{{r.profesor}} </p>  
+        </div>
+      </div>
+      <div class="part1">
+        <div class="seccion">
+          <p class="permanent-little ">Seccion: </p>  
+          <p>{{r.seccion}}</p>  
+        </div>
+      </div>
+      <div class="part1">
+        <div class="seccion">
+          <p class="permanent-little ">Scanneo </p>  
+          <p>{{r.time}}</p>  
+        </div>
+      </div>
+  </div> 
+
+  </div> 
+  
+  
+  
+  </ion-content>
+  
+  <ion-menu contentId="barra_superior">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/imagenes/userimagen.png" alt="">
+        <ion-label>
+          <div id="nombreUserActive2" >
+            <h1 class=temaUserSesion>usuario</h1>
+            <p>usuario</p>
+          </div>
+        </ion-label>  
+      </div>
+      <div class="action-button">
+        <ion-button (click)="cambiarTema()"><ion-icon name="contrast"></ion-icon>Cambio Tema
+        </ion-button>
+      </div>
+      <ion-list lines="none" class="menu-item">
+        <ion-item routerLink="/usuario">
+          <ion-icon name="people-circle"></ion-icon>Perfiles LocalStor 
+        </ion-item>
+        <ion-item (click)="StartScan()">
+          <ion-icon name="qr-code"></ion-icon> Scanear QR
+        </ion-item>
+        <ion-item routerLink="/home">
+          <ion-icon name="list"></ion-icon>Asistencias
+        </ion-item> 
+        <ion-item (click)="limpiarLocal()">
+          <ion-icon name="server-outline"></ion-icon>Limpiar Local
+        </ion-item> 
+      </ion-list>
+    </ion-content>
+  </ion-menu>

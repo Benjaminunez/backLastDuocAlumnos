@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulousuarios{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.boton_ion{
+    --background: var(--yellowDuoc) ;    /*css de contendo principal de la pagina*/
+    --border-color: var(--negroDuoc);
+    --width: 50px;
+    --height:50px; 
+    --border-radius: 10%;
+    --color:#ffffff;
+    ion-icon{
+        width: 26px;
+        height:26px; 
+    }
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+// pestaña barra superior de pagina 
+
+ion-header{               /*css dedicado esqueleto de header*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: var(--plomoDuoc);
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+
+#barra_superior{        /*css donde esta titulo duoc y boton de logout*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6rem ;
+    height: 5rem;
+    background-color: var(--plomoDuoc);
+    ion-title{              /*css titulo duoc*/
+        color: var(--negroDuoc);
+        img{
+            height: auto;
+            width: 25px;
+            ion-menu-button{
+                color: #ffffff;
+            }
+        }
+    }
+    
+}
+
+#infoUserBase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondoGeneral);
+    width: 100%;
+    height: auto;
+
+}
+
+#contenidoUser{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--fondoGeneral);
+    width: auto;
+    height: auto;
+    margin-top: 8rem;
+    #imagenUser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        #user{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2.5px solid var(--yellowDuoc);
+        }
+        #logoDuoc{
+            width: 18rem;
+            height: 80px;
+
+        }
+    }
+    #infoUser{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--plomoDuoc);
+        border-radius: 20px;
+        width: 91%;
+        height: 70%;
+        gap: 10px;
+        flex-direction: column;
+        padding: 2rem;
+        border: 4px solid var(--yellowDuoc);
+        h1{
+            color: var(--yellowDuoc);
+        }
+        ion-label{
+            background :linear-gradient(to right,#ffffff,#fcb32e);
+            padding: 0px;
+            width: 50vh;
+        }
+    }
+
+}
+
+#imagenesuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imagennnn{
+    max-height: 40px;
+}
